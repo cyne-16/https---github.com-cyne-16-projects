@@ -227,7 +227,7 @@ button:hover {
 .login-form-container form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center form elements including the button */
+    align-items: center; 
 }
 
 .login-form-container input {
@@ -255,7 +255,7 @@ button:hover {
 
 .signup-form-container {
     max-width: 600px;
-    height:600px;
+    height:650px;
     margin: auto;
     padding: 20px;
     background-color: #E5CCFF;
@@ -296,5 +296,45 @@ button:hover {
 .signup-form-container button:hover {
     background-color: #8666ba;
 }
+
+.search-results{
+    background-color:#D4A5FF;
+}
+.s{
+    font-family:serif;
+    font-size: 50px;
+    text-align:center;
+}
+
+.container {
+    max-width: 500px;
+    height:400px;
+    margin: auto;
+    padding: 20px;
+    background-color:#E5CCFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 20px;
+    align-items:center;
+}
+.sign-buttons {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+    gap: 50px;
+    
+}
+.sign-buttons button {
+    font-size: 18px; 
+    font-family:monospace;
+    max-width:120px;
+}
+
+
+    
+
+
 
 

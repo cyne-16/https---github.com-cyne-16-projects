@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <h1>HALLYU</h1>
     </header>
     <main>
-        <div class="signup-form-container">
-            <h2>Sign Up</h2>
+        <div class="container">
+        <div class="s">
             <br>
             <br>
-            <form action="signup_process.php" method="POST">
-                
-                <label for="email">Full Name:</label>
-                <input type="text" name="name"  required>
-               
-                <label for="email">Email:</label>
-                <input type="email" name="email"  required>
+        <h1><b>SIGN UP</b></h1>
+    </div>
+        <br>
+        <br>
+        <div class="sign-buttons">
             
-                <label for="email">Password:</label>
-                <input type="password" name="password"  required>
-             
-                <label for="email">Address:</label>
-                <input type="text" name="address"  required>
-           
-                <label for="s-email"> Birthdate:</label>
-                <input type="date" name="birthdate"  required>
-            
-                <label for="email">Age:</label>
-                <input type="number" name="age" placeholder="Age" required>   
-
-                <button type="submit">Sign Up</button>
-            </form>
+            <button onclick="window.location.href='admin.html'">ADMIN</button>
+            <button onclick="window.location.href='user.html'">USER</button>
         </div>
-        
+        </div>
+    </main>
