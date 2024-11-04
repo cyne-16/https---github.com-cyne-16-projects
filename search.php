@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
     echo '<section class="products">';  
     
     while ($row = $result->fetch_assoc()) {
-        echo '<div class="search-results">';  
+        echo '<div class="products-card">';  
         echo '<img src="' . htmlspecialchars($row["image"]) . '" alt="' . htmlspecialchars($row["product_name"]) . '" class="product-image">';
         echo '<h3 class="product-title">' . htmlspecialchars($row["product_name"]) . '</h3>';
         echo '<p class="product-artist">Artist: ' . htmlspecialchars($row["artist_name"]) . '</p>';
