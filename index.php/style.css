@@ -64,9 +64,6 @@ body {
     background-color: #8666ba;
 }
 
-
-
-
 .nav a {
     color: #78418d;
     margin: 0 15px;
@@ -89,6 +86,10 @@ body {
     text-align: center;
     font-size: 15px;
     font-family: Bookman Old Style;
+}
+.edit h5{
+    font-family:sans;
+    font-size:13px;
 }
 
 .search-form{
@@ -117,7 +118,6 @@ body {
     flex-wrap: wrap;
     border-top: 2px solid #D4A5FF;
     border-bottom: 2px solid #D4A5FF;
- 
     
 }
 
@@ -191,18 +191,29 @@ body {
     border-radius: 8px;
 }
 
-
 button {
-    background-color:#8c699a;
+    background-color:#78418d;
     border: none;
     border-radius: 5px;
-    color: #FFF;
+    color:#F3E8FF;
     cursor: pointer;
     padding: 0.5em;
+    
 }
 
 button:hover {
     background-color: #8666ba;
+}
+
+.popular-card button,
+.products-card button {
+    margin: 5px; 
+}
+
+
+.popular-card button + button,
+.products-card button + button {
+    margin-left: 10px; 
 }
 
 .login-form-container {
