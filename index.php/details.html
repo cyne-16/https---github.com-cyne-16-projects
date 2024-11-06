@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="head">
+        <div class="det-buttons">
+            <button onclick="window.location.href='login.html'">Log In</button>
+            <button onclick="window.location.href='signup.html'">Sign Up</button>
+            <button class="cart-button" onclick="window.location.href='cart.html'">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </div>
+        <div class="a">
+            <h1>HALLYU</h1>
+            <form class="search" action="search.php" method="GET">
+                <button type="submit">Search</button>
+                <input type="text" name="query" placeholder=" " required>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="details-container">
+            <div class="slider-container">
+                <div class="slides" id="slides">
+                    <img src="solo2.jpg" alt="Image 1">
+                    <img src="solo3.jpg" alt="Image 2">
+                    <img src="solo4.jpg" alt="Image 3">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.getElementById("slides");
+            const totalSlides = slides.children.length;
+            currentSlide = (index + totalSlides) % totalSlides; // Wrap around
+            const offset = -currentSlide * 100; // Calculate offset
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        function moveSlide(step) {
+            showSlide(currentSlide + step);
+        }
+
+       
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
